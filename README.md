@@ -9,6 +9,19 @@
 
 &nbsp;
 
+## TL;DR
+
+Запустить из консоли настройку Windows с предустановленными параметрами (в файле Default.preset)
+
+```cmd
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -include Win10.psm1 EnableFirewall EnableDefender
+```
+
+Дополнительные проекты по очистке Windows и отключении телеметрии (слежки, лишней нагрузки):
+
+- https://github.com/10se1ucgo/DisableWinTracking - отключение телеметрии (disable spy telemetry)
+- https://github.com/Sycnex/Windows10Debloater - удаление по списку ненужных предустановленных приложений Windows 10 (remove pre-installed Win10 apps with blacklist)
+
 ## Description
 
 This is a PowerShell script for automation of routine tasks done after fresh installations of Windows 10 and Windows Server 2016 / 2019. This is by no means any complete set of all existing Windows tweaks and neither is it another "antispying" type of script. It's simply a setting which I like to use and which in my opinion make the system less obtrusive.
